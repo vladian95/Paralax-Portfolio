@@ -40,7 +40,7 @@
 }
 
 .name {
-  font-size: 20vw;
+  font-size: 18vw;
   color: #333;
   cursor: default;
   text-align: left;
@@ -198,6 +198,15 @@
 .githubTitle {
   font-size: 100px;
   color: #333;
+  padding: 0px 10px;
+  text-align: center;
+}
+
+.githubTitleTwo a {
+  font-size: 100px;
+  color: #333;
+  padding: 0px 10px;
+  text-align: center;
 }
 
 .githubChart {
@@ -238,4 +247,59 @@
 
 .githubChart:hover .active:nth-child(2n) {
   background-color: #063d24;
+}
+
+.githubSm {
+  display: none;
+}
+
+@media (max-width: 1360px) {
+  .projects {
+    padding: 0px 30px;
+    text-align: center;
+  }
+
+  .project {
+    flex-direction: column;
+    height: max-content;
+  }
+
+  .project:last-child {
+    flex-direction: column;
+  }
+
+  .phone,
+  .laptop {
+    transform: none !important;
+  }
+
+  .projectDetail {
+    align-items: left;
+  }
+
+  .githubTitle {
+    text-align: center;
+    font-size: 7vh;
+  }
+}
+
+@media (max-width: 858px) {
+  .githubChart {
+    display: none;
+  }
+
+  .githubSm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    color: #555;
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .githubSm img {
+    width: 200px;
+    height: 200px;
+  }
 }

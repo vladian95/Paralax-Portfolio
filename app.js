@@ -36,7 +36,7 @@ window.addEventListener('scroll', () => {
   saluteImgContainer.style.transform = `translate(${offsetY * 0.4}px, ${
     offsetY * 0.7
   }px)`;
-  authorName.style.transform = `translateX(${offsetY * 0.3}px)`;
+  authorName.style.transform = `translateX(${offsetY * 0.1}px)`;
   jobTitleContainer[0].style.backgroundPositionY = `${offsetY * 0.5}px`;
   jobTitleContainer[1].style.backgroundPositionY = `${-offsetY * 0.5}px`;
   jobTitle[0].style.transform = `translateX(calc(200vh - ${offsetY}px))`;
