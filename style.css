@@ -67,7 +67,7 @@
 .projects {
   display: flex;
   flex-direction: column;
-  gap: 100vh;
+  gap: 100px;
   padding: 0px 100px;
 }
 
@@ -82,6 +82,10 @@
   gap: 100px;
   height: 100vh;
   overflow: hidden;
+}
+
+.project:last-child {
+  flex-direction: row-reverse;
 }
 
 .phone {
@@ -156,4 +160,78 @@
 
 .projectBtn:hover.projectBtn::after {
   transform: translateX(100%);
+}
+
+.laptop {
+  width: 600px;
+  height: 379px;
+  flex: 1;
+  position: relative;
+}
+
+.laptopScreen {
+  width: 451px;
+  height: 283px;
+  position: absolute;
+  top: 18px;
+  left: 68px;
+  overflow: scroll;
+  background-color: aqua;
+}
+
+.laptopApp {
+  width: 100%;
+}
+
+.githubContainer {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.githubTitle {
+  font-size: 100px;
+  color: #333;
+}
+
+.githubChart {
+  width: 820px;
+  text-align: center;
+}
+
+.dates {
+  padding: 10px;
+  color: #555;
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.boxContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.box {
+  width: 15px;
+  height: 15px;
+  background-color: #171c25;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: all 1s ease;
+}
+
+.active:nth-child(4n) {
+  background-color: #195b2c;
+}
+
+.githubChart:hover .active:nth-child(2n + 1) {
+  background-color: #195b2c;
+}
+
+.githubChart:hover .active:nth-child(2n) {
+  background-color: #063d24;
 }
