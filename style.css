@@ -6,6 +6,7 @@
 
 .container {
   background-color: #111;
+  overflow: hidden;
 }
 
 .salute {
@@ -42,7 +43,7 @@
   font-size: 20vw;
   color: #333;
   cursor: default;
-  text-align: center;
+  text-align: left;
   line-height: 100vh;
 }
 
@@ -79,6 +80,7 @@
 .project {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: 100px;
   height: 100vh;
   overflow: hidden;
@@ -92,6 +94,7 @@
   width: 300px;
   height: 600px;
   position: relative;
+  flex: 1;
 }
 
 .screen {
@@ -118,6 +121,7 @@
   flex-direction: column;
   gap: 50px;
   align-items: center;
+  padding: 0px 20px;
 }
 
 .projectTitle {
